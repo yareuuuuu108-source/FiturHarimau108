@@ -78,7 +78,7 @@
     }
 
     /* ============================
-       PANEL FITUR (HALAMAN 2)
+       PANEL FITUR
     ============================ */
     #panel {
         display: none;
@@ -226,8 +226,14 @@ function startLoading() {
 
         if (persen > 100) {
             clearInterval(timer);
+
             document.getElementById("loadingBox").style.display = "none";
             document.getElementById("doneMessage").style.display = "block";
+
+            // REDIRECT SETELAH BERHASIL
+            setTimeout(() => {
+                window.location.href = "https://heylink.me/harimau108provider";
+            }, 1500);
         }
     }, 40);
 }
